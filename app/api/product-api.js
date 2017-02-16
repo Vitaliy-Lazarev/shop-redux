@@ -42,7 +42,7 @@ export function deleteCartProduct(productId, event) {
     return item.id !== productId;
 
   });
-  
+
 
   store.dispatch(deleteCartProductSuccess(newStateProductCart));
 
@@ -75,6 +75,8 @@ export function addCartProduct(productId) {
 
 
       store.getState().productState.productCart.push(productCart);
+      //
+      // console.log('12', store.getState().productState.productCart);
 
       store.dispatch(addToCartProductsSuccess(store.getState().productState.productCart));
 

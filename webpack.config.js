@@ -9,10 +9,10 @@ module.exports = {
     devtool: '#source-map',
     module: {
         loaders: [
-            {
-                loader: 'babel',
-                exclude: /node_modules/
-            }
+          {
+            loader: 'babel',
+            exclude: /node_modules/
+          }
         ]
     }
 }

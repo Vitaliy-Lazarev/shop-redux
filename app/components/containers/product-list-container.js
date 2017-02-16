@@ -14,7 +14,7 @@ const ProdcutListContainer = React.createClass({
 
   render: function() {
     return (
-      <ProducstList products={this.props.products} />
+      <ProducstList products={this.props.products}/>
     );
   }
 

@@ -161,6 +161,9 @@ main {
 .data-list-item:nth-child(4n +1){
   clear: both;
 }
+.data-list-item .description {
+  min-height: 72px;
+}
 .details a {
   display: block;
   margin-top: 25px;

@@ -3,6 +3,8 @@ import React from 'react';
 // Using "Stateless Functional Components"
 export default function(props) {
 
+  console.log(props);
+
   return (
     <div className="product-cart">
       <div className="details">
@@ -20,6 +22,7 @@ export default function(props) {
               <td className="text-right"></td>
             </tr>
             </thead>
+
 
             <tbody>
                     {Object.keys(props).map((item, index) => {
@@ -39,10 +42,6 @@ export default function(props) {
                       );
 
                     })}
-
-
-
-
             </tbody>
           </table>
           <div><strong>Total</strong></div>
