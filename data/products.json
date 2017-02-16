@@ -1,0 +1,93 @@
+{
+  "products":[
+    {
+    "id": 1,
+    "price":"$63.95",
+    "name":"HP - NO.57 TRI COLOUR INK",
+    "brand":"HP",
+    "category":"e-cameras-printers-ink",
+    "image_url":"data/images/apple_cinema_30-200x200.jpg",
+    "url":"#",
+    "sku":"17952",
+    "description":"HP 57 TRI-COLOUR INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+    },
+    {
+      "id": 2,
+    "price":"$50.05",
+    "name":"Iphone",
+    "brand":"Apple",
+    "category":"e-cameras-printers-ink",
+    "image_url":"data/images/iphone_1-200x200.jpg",
+    "url":"#",
+    "sku":"17952",
+    "description":"Iphone PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+    },
+    {
+      "id": 3,
+    "price":"$75.10",
+    "name":"Cannon",
+    "brand":"Cannon",
+    "category":"e-cameras-printers-ink",
+    "image_url":"data/images/canon_eos_5d_1-200x200.jpg",
+    "url":"#",
+    "sku":"17952",
+    "description":"Cannon INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+    },
+    {
+      "id": 4,
+    "price":"$55.10",
+    "name":"MacBook",
+    "brand":"MacBook",
+    "category":"e-cameras-printers-ink",
+    "image_url":"data/images/macbook_1-200x200.jpg",
+    "url":"#",
+    "sku":"17952",
+    "description":"MacBook TRI-COLOUR INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+    },
+    {
+      "id": 5,
+    "price":"$40.95",
+    "name":"Ipod",
+    "brand":"Apple",
+    "category":"e-cameras-printers-ink",
+    "image_url":"data/images/ipod_classic_1-228x228.jpg",
+    "url":"#",
+    "sku":"17952",
+    "description":"Ipod IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!",
+    "sale_price":"$63.95"
+    },
+    {
+      "id": 6,
+    "price":"$48.05",
+    "name":"Macbook Air",
+    "brand":"Apple",
+    "category":"e-cameras-printers-ink",
+    "image_url":"data/images/macbook_air_1-228x228.jpg",
+    "url":"#",
+    "sku":"17952",
+    "description":"Macbook Air TRUE-TO-LIFE COLOURS. Reliable results!"
+    },
+    {
+      "id": 7,
+    "price":"$46.10",
+    "name":"Sony",
+    "brand":"Sony",
+    "category":"e-cameras-printers-ink",
+    "image_url":"data/images/sony_vaio_1-228x228.jpg",
+    "url":"#",
+    "sku":"17952",
+    "description":"Sony TO-LIFE COLOURS. Reliable results!"
+    },
+    {
+      "id": 8,
+    "price":"$45.10",
+    "name":"Samsung",
+    "brand":"Samsung",
+    "category":"e-cameras-printers-ink",
+    "image_url":"data/images/samsung_syncmaster_941bw-228x228.jpg",
+    "url":"#",
+    "sku":"17952",
+    "description":"Samsung TRI-COLOUR INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+    }
+  ]
+}
