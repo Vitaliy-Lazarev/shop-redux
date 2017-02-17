@@ -3,7 +3,20 @@ import React from 'react';
 // Using "Stateless Functional Components"
 export default function(props) {
 
-  console.log(props);
+  let headTable = (
+      <tr className='headStrong'>
+        <td className="text-center">Image</td>
+        <td className="text-left">Product Name</td>
+        <td className="text-left">Brand</td>
+        <td className="sku">Sku</td>
+        <td className="text-left">Quantity</td>
+        <td className="text-right">Price</td>
+        <td className="text-right">Total</td>
+        <td className="text-right"></td>
+      </tr>
+  )
+
+  let emptyCart = (<tr className='emptyCart'>Cart Empty</tr>)
 
   return (
     <div className="product-cart">
@@ -11,19 +24,8 @@ export default function(props) {
         <form>
           <table className="table">
             <thead>
-            <tr>
-              <td className="text-center">Image</td>
-              <td className="text-left">Product Name</td>
-              <td className="text-left">Brand</td>
-              <td className="sku">Sku</td>
-              <td className="text-left">Quantity</td>
-              <td className="text-right">Price</td>
-              <td className="text-right">Total</td>
-              <td className="text-right"></td>
-            </tr>
+              {Object.keys(props).length ? headTable : emptyCart}
             </thead>
-
-
             <tbody>
                     {Object.keys(props).map((item, index) => {
 
@@ -44,7 +46,7 @@ export default function(props) {
                     })}
             </tbody>
           </table>
-          <div><strong>Total</strong></div>
+          <div className={Object.keys(props).length ? 'show' : 'hide'}><strong>Total</strong></div>
         </form>
       </div>
     </div>

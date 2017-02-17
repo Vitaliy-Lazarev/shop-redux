@@ -130,18 +130,30 @@ form.search button{
   display: block;
   padding: 0.6em;
 }
-
+.search-results{
+  overflow: hidden;
+}
 .primary-aside a.active {
   color: #fff;
   background-color: #2297D1;
 }
-
+.hide{
+  display: none;
+}
+.emptyCart{
+  font-size: 40px;
+  text-align: center;
+}
+.headStrong{
+  font-weight: 600;
+}
 main {
   margin: 0 auto;
   max-width: 1170px;
   width: 100%;
   min-height: 600px;
   padding: 50px 0;
+  overflow: hidden;
 }
 .product-profile .details{
   overflow: hidden;
