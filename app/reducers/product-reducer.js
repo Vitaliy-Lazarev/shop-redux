@@ -19,7 +19,23 @@ const productReducer = function(state = initialState, action) {
       return Object.assign({}, state, { productProfile: action.productProfile });
 
     case types.PRODUCT_ADD_TO_CART_SUCCESS:
-      return Object.assign({}, state, { productCart: action.productCart });
+
+      function in_array(id, array) {
+
+        for(var i = 0; i < array.length; i++)
+        {
+          if(array[i].id === id) {
+
+            return array[i].quantity = +(array[i].quantity) + 1;
+          }
+        }
+
+        return state.productCart.push(action.productCart);
+      }
+
+      in_array(action.productCart.id, state.productCart);
+
+      return Object.assign({}, state, { productCart: state.productCart });
 
     case types.DELETE_PRODUCT_SUCCESS:
       return Object.assign({}, state, { productCart: action.productCart });

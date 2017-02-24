@@ -14,6 +14,7 @@ export function addToCartProductsSuccess(productCart) {
     type: types.PRODUCT_ADD_TO_CART_SUCCESS,
     productCart
   };
+
 }
 
 export function deleteCartProductSuccess(productCart) {

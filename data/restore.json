@@ -9,7 +9,8 @@
       "image_url":"images/apple_cinema_30-200x200.jpg",
       "url":"#",
       "sku":"17952",
-      "description":"HP 57 TRI-COLOUR INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+      "description":"HP 57 TRI-COLOUR INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!",
+      "quantity" : 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "image_url":"images/iphone_1-200x200.jpg",
       "url":"#",
       "sku":"17952",
-      "description":"Iphone PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+      "description":"Iphone PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!",
+      "quantity" : 1
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "image_url":"images/canon_eos_5d_1-200x200.jpg",
       "url":"#",
       "sku":"17952",
-      "description":"Cannon INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+      "description":"Cannon INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!",
+      "quantity" : 1
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "image_url":"images/macbook_1-200x200.jpg",
       "url":"#",
       "sku":"17952",
-      "description":"MacBook TRI-COLOUR INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+      "description":"MacBook TRI-COLOUR INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!",
+      "quantity" : 1
     },
     {
       "id": 5,
@@ -54,7 +58,8 @@
       "url":"#",
       "sku":"17952",
       "description":"Ipod IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!",
-      "sale_price":"$63.95"
+      "sale_price":"$63.95",
+      "quantity" : 1
     },
     {
       "id": 6,
@@ -65,7 +70,8 @@
       "image_url":"images/macbook_air_1-228x228.jpg",
       "url":"#",
       "sku":"17952",
-      "description":"Macbook Air TRUE-TO-LIFE COLOURS. Reliable results!"
+      "description":"Macbook Air TRUE-TO-LIFE COLOURS. Reliable results!",
+      "quantity" : 1
     },
     {
       "id": 7,
@@ -76,7 +82,8 @@
       "image_url":"images/sony_vaio_1-228x228.jpg",
       "url":"#",
       "sku":"17952",
-      "description":"Sony TO-LIFE COLOURS. Reliable results!"
+      "description":"Sony TO-LIFE COLOURS. Reliable results!",
+      "quantity" : 1
     },
     {
       "id": 8,
@@ -87,7 +94,8 @@
       "image_url":"images/samsung_syncmaster_941bw-228x228.jpg",
       "url":"#",
       "sku":"17952",
-      "description":"Samsung TRI-COLOUR INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!"
+      "description":"Samsung TRI-COLOUR INKJET PRINT CARTRIDGE IDEAL FOR TRUE-TO-LIFE COLOURS. Reliable results!",
+      "quantity" : 1
     }
   ]
 }

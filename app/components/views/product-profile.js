@@ -3,11 +3,20 @@ import React from 'react';
 // Using "Stateless Functional Components"
 export default function(props) {
 
+  let urlImg = '../' + props.image_url;
+
+  console.log(props);
+
+  function updateItem() {
+    const input = document.getElementById('myInput');
+    props.addCartProduct(props.id, input.value);
+  }
+
   return (
     <div className="product-profile">
       <div className="details">
         <div className="left-block">
-          <img src={props.image_url} alt={props.name} />
+          <img src={urlImg} alt={props.name} />
         </div>
         <div className="right-block">
           <h1>{props.name}</h1>
@@ -15,8 +24,8 @@ export default function(props) {
           <p>{props.description}</p>
           <p>{props.brand}</p>
           <p>{props.sku}</p>
-
-          <button onClick={props.addCartProduct.bind(null, props.id)}>Add to Cart</button>
+          <input type="number" id="myInput" value={props.quantity}/>
+          <button onClick={updateItem}>Add to Cart</button>
         </div>
       </div>
     </div>

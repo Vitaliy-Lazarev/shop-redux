@@ -5,12 +5,12 @@ import ProductCart from '../views/product-cart';
 
 const ProductCartContainer = React.createClass({
 
-  render: function() {
+render: function() {
 
-    return (
-      <ProductCart {...this.props.productCart} />
-    );
-  }
+  return (
+    <ProductCart {...this.props.productCart} />
+  );
+}
 
 });
 

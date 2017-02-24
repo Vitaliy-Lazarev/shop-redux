@@ -17,6 +17,7 @@ export default function(props) {
   )
 
   let emptyCart = (<tr className='emptyCart'>Cart Empty</tr>)
+  let amount = 0;
 
   return (
     <div className="product-cart">
@@ -29,6 +30,10 @@ export default function(props) {
             <tbody>
                     {Object.keys(props).map((item, index) => {
 
+                      var totalProduct = props[item].quantity * (+(props[item].price).replace('$',''));
+
+                      amount += totalProduct;
+
                       return (
                         <tr className="cart-product" key={index}>
                           <td><a href={props[item].url}><img className="img-responsive" src={props[item].image_url} alt={props[item].name} title={props[item].name} /></a></td>
@@ -37,16 +42,15 @@ export default function(props) {
                           <td className="sku">{props[item].sku}</td>
                           <td className="Quantity">{props[item].quantity}</td>
                           <td className="price">{props[item].price}</td>
-                          <td className="price">{props[item].price}</td>
-                          <td className="delete"><button onClick={props[item].deleteCartProduct.bind(null, props[item].id)}>Delete</button></td>
-
+                          <td className="total">{'$' + totalProduct.toFixed(2)}</td>
+                          <td className="delete"><button onClick={props[item].deleteCartProduct.bind(this, props[item].id)}>Delete</button></td>
                         </tr>
                       );
 
                     })}
             </tbody>
           </table>
-          <div className={Object.keys(props).length ? 'show' : 'hide'}><strong>Total</strong></div>
+          <div className={Object.keys(props).length ? 'show' : 'hide'}><strong>Total: {'$' + amount.toFixed(2)}</strong></div>
         </form>
       </div>
     </div>

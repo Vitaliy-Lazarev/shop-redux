@@ -62,5 +62,5 @@ gulp.task('serve:node', function(done) {
  */
 
 gulp.task('serve', ['serve:node', 'serve:api']);
-gulp.task('watch', ['build', 'watch:build', 'serve']);
-gulp.task('default', ['serve']);
+gulp.task('default', ['build', 'watch:build', 'serve']);
+// gulp.task('default', ['serve']);

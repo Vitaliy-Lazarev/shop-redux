@@ -54,31 +54,26 @@ export function deleteCartProduct(productId, event) {
  * Add a product to cart
  */
 
-export function addCartProduct(productId) {
+export function addCartProduct(productId, quantity) {
 
-  let productCart = {};
+  let products = {};
 
   return axios.get('http://localhost:3001/products/' + productId)
     .then(response => {
 
       let product = response.data;
-      productCart.name = product.name;
-      productCart.price = product.price;
-      productCart.brand = product.brand;
-      productCart.description = product.description;
+      products.name = product.name;
+      products.price = product.price;
+      products.brand = product.brand;
+      products.description = product.description;
 
-      productCart.sku = product.sku;
-      productCart.image_url = product.image_url;
-      productCart.quantity = product.quantity;
-      productCart.id = product.id;
-      productCart.deleteCartProduct = deleteCartProduct;
+      products.sku = product.sku;
+      products.image_url = product.image_url;
+      products.quantity = quantity;
+      products.id = product.id;
+      products.deleteCartProduct = deleteCartProduct;
 
-
-      store.getState().productState.productCart.push(productCart);
-      //
-      // console.log('12', store.getState().productState.productCart);
-
-      store.dispatch(addToCartProductsSuccess(store.getState().productState.productCart));
+      store.dispatch(addToCartProductsSuccess(products));
 
       return;
 
@@ -106,6 +101,7 @@ export function getProfile(productId) {
       profile.price = product.price;
       profile.brand = product.brand;
       profile.description = product.description;
+      profile.quantity = product.quantity;
       profile.id = product.id;
 
         profile.sku = product.sku;
