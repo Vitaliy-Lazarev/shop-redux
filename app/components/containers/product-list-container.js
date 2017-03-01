@@ -13,8 +13,11 @@ const ProdcutListContainer = React.createClass({
   },
 
   render: function() {
+
+    const { products } = this.props;
+
     return (
-      <ProducstList products={this.props.products}/>
+      <ProducstList products={ products } addCartProduct = { productApi.addCartProduct } />
     );
   }
 

@@ -4,6 +4,10 @@ import { Link } from 'react-router';
 // Using "Stateless Functional Components"
 export default function(props) {
 
+  function updateItem(id, quantity) {
+    props.addCartProduct(id, quantity);
+  }
+
   return (
     <div className="data-list">
 
@@ -16,8 +20,7 @@ export default function(props) {
               <Link to={'/products/' + product.id}>{product.name}</Link>
               <div className="price">{product.price}</div>
               <div className="description">{product.description}</div>
-              {/*<button onClick={product.addCartProduct(product.id)}>Add to Cart</button>*/}
-              <button>Add to Cart</button>
+              <button onClick={updateItem.bind(this, product.id, product.quantity)}>Add to Cart</button>
             </div>
           </div>
         );

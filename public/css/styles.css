@@ -209,3 +209,10 @@ table.table {
 .search-results {
   margin: 1em 0;
 }
+button.add-to-cart {
+  display: block;
+  margin-top: 25px;
+  padding: 10px 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+}

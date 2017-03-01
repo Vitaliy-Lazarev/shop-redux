@@ -43,7 +43,6 @@ export function deleteCartProduct(productId, event) {
 
   });
 
-
   store.dispatch(deleteCartProductSuccess(newStateProductCart));
 
   return;
@@ -66,7 +65,6 @@ export function addCartProduct(productId, quantity) {
       products.price = product.price;
       products.brand = product.brand;
       products.description = product.description;
-
       products.sku = product.sku;
       products.image_url = product.image_url;
       products.quantity = quantity;
@@ -103,9 +101,8 @@ export function getProfile(productId) {
       profile.description = product.description;
       profile.quantity = product.quantity;
       profile.id = product.id;
-
-        profile.sku = product.sku;
-        profile.image_url = product.image_url;
+      profile.sku = product.sku;
+      profile.image_url = product.image_url;
 
       store.dispatch(productProfileSuccess(profile));
 

@@ -5,11 +5,17 @@ export default function(props) {
 
   let urlImg = '../' + props.image_url;
 
-  console.log(props);
-
   function updateItem() {
     const input = document.getElementById('myInput');
     props.addCartProduct(props.id, input.value);
+  }
+
+  function onChangeNum(event) {
+
+    console.log(event.target.value);
+
+    // props.quantity = event.target.value;
+
   }
 
   return (
@@ -24,8 +30,8 @@ export default function(props) {
           <p>{props.description}</p>
           <p>{props.brand}</p>
           <p>{props.sku}</p>
-          <input type="number" id="myInput" value={props.quantity}/>
-          <button onClick={updateItem}>Add to Cart</button>
+          <input type="number" id="myInput" value={ props.quantity } onChange={onChangeNum}/>
+          <button className="add-to-cart" onClick={updateItem}>Add to Cart</button>
         </div>
       </div>
     </div>

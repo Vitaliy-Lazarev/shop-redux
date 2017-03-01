@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 // Using "Stateless Functional Components"
 export default function(props) {
+
 
   let headTable = (
       <tr className='headStrong'>
@@ -14,9 +16,9 @@ export default function(props) {
         <td className="text-right">Total</td>
         <td className="text-right"></td>
       </tr>
-  )
+  );
 
-  let emptyCart = (<tr className='emptyCart'>Cart Empty</tr>)
+  let emptyCart = (<tr className='emptyCart'>Cart Empty</tr>);
   let amount = 0;
 
   return (
@@ -37,7 +39,7 @@ export default function(props) {
                       return (
                         <tr className="cart-product" key={index}>
                           <td><a href={props[item].url}><img className="img-responsive" src={props[item].image_url} alt={props[item].name} title={props[item].name} /></a></td>
-                          <td className="name"><a href={props[item].url}>{props[item].name}</a></td>
+                          <td className="name"> <Link to={'/products/' + props[item].id}>{props[item].name}</Link></td>
                           <td className="brand">{props[item].brand}</td>
                           <td className="sku">{props[item].sku}</td>
                           <td className="Quantity">{props[item].quantity}</td>
